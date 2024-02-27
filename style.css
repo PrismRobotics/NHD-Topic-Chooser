@@ -16,7 +16,7 @@ body {
   width: 400px;
   height: 450px;
   margin: 2rem auto;
-  background-color: var(--white-color);
+  background-color: white;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
