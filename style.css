@@ -122,3 +122,14 @@ form button:active {
 .input:not(:placeholder-shown) + .label {
   transform: translateY(-100%) scale(0.75);
 }
+.input {
+  font-size: 20px;
+  width: 100%;
+  padding: 8px 0;
+  padding-right: 30px; // To avoid overlapping with the clear button
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  transition: border-color 250ms;
+  background-color: transparent;
+}
