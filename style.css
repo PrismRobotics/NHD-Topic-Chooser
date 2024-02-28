@@ -79,8 +79,6 @@ form button:active {
   content: "";
   background-color: var(--light-gray-color);
   position: absolute;
-  top: 50%;
-  left: 0;
   transform: translateY(-50%);
   height: 4px;
   width: 100%;
