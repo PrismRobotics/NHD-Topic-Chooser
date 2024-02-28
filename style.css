@@ -139,3 +139,9 @@ form button:active {
   transition: border-color 250ms;
   background-color: transparent;
 }
+.input-wrapper {
+  position: relative;
+  margin-top: 30px; // To create space for floating inputs
+  margin-inline: auto;
+  max-width: 400px;
+}
