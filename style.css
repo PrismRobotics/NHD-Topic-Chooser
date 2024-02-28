@@ -115,8 +115,18 @@ form button:active {
   color: var(--white-color);
   background-color: gray;
 }
-input:focus + label,
-input:not(:placeholder-shown) + label {
-  /* Move the label above the button and scale it down */
+.label {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  color: #43454e;
+  pointer-events: none;
+  transform-origin: left center;
+  transition: transform 250ms;
+  font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
+    serif;
+}
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label {
   transform: translateY(-100%) scale(0.75);
 }
