@@ -113,5 +113,10 @@ form button:active {
 .circle.active {
   border-color: var(--line-border-empty);
   color: var(--white-color);
-  background-color: var(--line-border-fill);
+  background-color: gray;
+}
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  /* Move the label above the button and scale it down */
+  transform: translateY(-100%) scale(0.75);
 }
