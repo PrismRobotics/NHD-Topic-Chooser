@@ -7,8 +7,8 @@ body {
 }
 
 .container { 
-  width: 400px;
-  height: 450px;
+  width: 600px;
+  height: 650px;
   margin: 2rem auto;
   background-color: white;
   overflow: hidden;
