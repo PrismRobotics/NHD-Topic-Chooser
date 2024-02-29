@@ -39,7 +39,7 @@ h3 {
 }
 form input:focus {
   outline: none;
-  border: 1px solid var(--dark-color);
+  box-shadow: 3px 3px 1px gray;
 }
 .btn_box {
   width: 100%;
