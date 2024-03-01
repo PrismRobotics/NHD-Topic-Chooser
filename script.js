@@ -8,7 +8,7 @@ const circles = document.querySelectorAll(".circle");
 let currectActive = 1;
 //============== Next Form===============
 function nextOne() {
-  form1.style.left = "-450px";
+  form1.style.left = "-600px";
   form2.style.left = "25px";
   //next slide
   increamentNumber();
@@ -18,7 +18,7 @@ function nextOne() {
 //=============== Back One==================
 function backOne() {
   form1.style.left = "25px";
-  form2.style.left = "450px";
+  form2.style.left = "600px";
   // back slide
   decreametNumber();
   // update progress bar
