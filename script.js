@@ -26,7 +26,7 @@ function backOne() {
 }
 //============ Second Form=============
 function nextTwo() {
-  form2.style.left = "-450px";
+  form2.style.left = "-600px";
   form3.style.left = "25px";
   //next slide
   increamentNumber();
@@ -36,7 +36,7 @@ function nextTwo() {
 //=============== Back One==================
 function backTwo() {
   form2.style.left = "25px";
-  form3.style.left = "450px";
+  form3.style.left = "600px";
   // back slide
   decreametNumber();
   // update progress bar
