@@ -6,6 +6,42 @@ const form3 = document.getElementById("form3");
 const progressEl = document.getElementById("progress");
 const circles = document.querySelectorAll(".circle");
 let currectActive = 1;
+const API_KEY = "AIzaSyCnhlnFtUstYR0wROTWgMBA4-DF4ejfPPU"
+
+import { GoogleGenerativeAI } from "@google/generative-ai";
+
+// Access your API key (see "Set up your API key" above)
+const genAI = new GoogleGenerativeAI(API_KEY);
+
+async function run() {
+  // For text-only input, use the gemini-pro model
+  const model = genAI.getGenerativeModel({ model: "gemini-pro"});
+
+  const prompt = "Please take the folowing questions and responses about a persons intrests and return 3 topics and their brief overviews that you would recomend for them in National History Day. Do not say anything else. To the question 'Choose a person in history you find inspiring or fantastic' they respnded, '" + Q1
+
+  const result = await model.generateContent(prompt);
+  const response = await result.response;
+  const text = response.text();
+  const element = document.getElementById("AiResponse");
+  element.innerHTML = text;
+  console.log(text);
+}
+
+
+
+function validateForms() {
+  var Q1 = document.forms["form1"]["Q1"].value;
+  var Q2 = document.forms["form1"]["Q2"].value;
+  var Q3 = document.forms["form1"]["Q3"].value;
+  var Q4 = document.forms["form1"]["Q4"].value;
+  var Q5 = document.forms["form2"]["Q5"].value;
+  var Q6 = document.forms["form2"]["Q6"].value;
+  var Q7 = document.forms["form2"]["Q7"].value;
+  var Q8 = document.forms["form2"]["Q8"].value;
+  var Q9 = document.forms["form2"]["Q9"].value;
+  var Q10 = document.forms["form2"["Q10"].value;
+}
+
 //============== Next Form===============
 function nextOne() {
   form1.style.left = "-600px";
@@ -32,6 +68,8 @@ function nextTwo() {
   increamentNumber();
   // update progress bar
   update();
+  validateForms()
+  run()
 }
 //=============== Back One==================
 function backTwo() {
