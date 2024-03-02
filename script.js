@@ -8,10 +8,10 @@ const circles = document.querySelectorAll(".circle");
 let currectActive = 1;
 const API_KEY = "AIzaSyCnhlnFtUstYR0wROTWgMBA4-DF4ejfPPU"
 
-import { GoogleGenerativeAI } from "@google/generative-ai";
+//import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Access your API key (see "Set up your API key" above)
-const genAI = new GoogleGenerativeAI(API_KEY);
+//const genAI = new GoogleGenerativeAI(API_KEY);
 
 
 function validateForms() {
