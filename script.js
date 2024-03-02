@@ -24,7 +24,7 @@ function validateForms() {
   var Q7 = document.forms["form2"]["Q7"].value;
   var Q8 = document.forms["form2"]["Q8"].value;
   var Q9 = document.forms["form2"]["Q9"].value;
-  var Q10 = document.forms["form2"["Q10"].value;
+  var Q10 = document.forms["form2"]["Q10"].value;
 }
 
 //============== Next Form===============
@@ -53,8 +53,6 @@ function nextTwo() {
   increamentNumber();
   // update progress bar
   update();
-  validateForms()
-  run()
 }
 //=============== Back One==================
 function backTwo() {

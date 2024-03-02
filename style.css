@@ -15,7 +15,7 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   position: relative;
-  margin-top: 30px; // To create space for floating inputs
+  margin-top: 30px; 
   margin-inline: auto;
 }
 h3 {
@@ -31,11 +31,11 @@ h3 {
   left: 20px;
   font-family: inherit;
   transition: 0.5s ease-in;
-  margin-top: 30px; // To create space for floating inputs
+  margin-top: 30px; 
   margin-inline: auto;
   
 }
-}
+
 form input:focus {
   outline: none;
   box-shadow: 3px 3px 1px gray;
@@ -129,7 +129,7 @@ form button:active {
   font-size: 20px;
   width: 100%;
   padding: 8px 0;
-  padding-right: 30px; // To avoid overlapping with the clear button
+  padding-right: 30px; 
   color: #333;
   border: none;
 }
