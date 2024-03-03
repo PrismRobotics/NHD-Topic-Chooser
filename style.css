@@ -139,7 +139,7 @@ form button:active {
   position: relative;
   margin-inline: auto;
   max-width: 500px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .dropdown {
     outline: 0;
