@@ -18,6 +18,7 @@
         <div class="circle">3</div>
       </div>
       <form id="form1">
+        <h3>Open Ended Questions</h3>
         <div class="input-wrapper">
             <!-- 
             Input needs to have a placeholder in order to use :placeholder-shown pseudo class in Safari.
@@ -25,24 +26,43 @@
             -->
             <input autocomplete="off" class="input" type="text" id="Q1" placeholder="" />
             <label class="label" for="Q1">
-              Choose a person in history you find fascinating or inspiring.
-            </label>
-          </div>
-        <div class="input-wrapper">
-            <input autocomplete="off" class="input" type="text" id="email" placeholder="" />
-            <label class="label" for="email">
-                Email
+              What is one person in history you find fascinating or inspiring?
             </label>
         </div>
-         <div class="btn_box">
+        <div class="input-wrapper">
+            <input autocomplete="off" class="input" type="text" id="Q2" placeholder="" />
+            <label class="label" for="Q2">
+              What historical mystery or unsolved question fascinates you?
+            </label>
+        </div>
+        <div class="input-wrapper">
+            <input autocomplete="off" class="input" type="text" id="Q3" placeholder="" />
+            <label class="label" for="Q3">
+              If you could witness any moment in history, what would it be and why?
+            </label>
+        </div>
+        <div class="input-wrapper">
+            <input autocomplete="off" class="input" type="text" id="Q4" placeholder="" />
+            <label class="label" for="Q4">
+              What is one area of history you have a personal connection to?
+            </label>
+        </div>
+        <div class="btn_box">
           <button id="next1" type="button">Next</button>
         </div>
       </form>
       <form id="form2">
         <h3>Personal Info</h3>
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="Last Name" />
-        <input type="text" placeholder="Phone Number" />
+        <label for="Q5">Language</label>
+        <select class="dropdown" name="languages" id="Q5" multiple required>
+          <option value="none" selected disabled hidden>--Select an Option--</option>
+          <option value="Pre-Ancient History">Pre-Ancient History (before CE)</option>
+          <option value="Ancient History">Ancient History (before 476 CE)</option>
+          <option value="Medeival History">Medieval History (476 CE - 1453 CE)</option>
+          <option value="Early Modern History">Early Modern History (1453 AD - 18th Century)</option>
+          <option value="Modern History">Modern History (18th Century - 20th Century)</option>
+        </select>
+  
         <div class="btn_box">
           <button id="back1" type="button">Back</button>
           <button id="next2" type="button">Next</button>
@@ -50,20 +70,6 @@
       </form>
       <form id="form3">
         <h3>Social Links</h3>
-        <script type="text/python">
-          #import generativeai as genai
-          #from browser import document
-
-
-          #API = "AIzaSyDABPIwb1sMDdqm4r11_a_LCkRuFtvZHxk"
-
-          #genai.configure(api_key=API) # Tells gen AI which API to use
-          #model = genai.GenerativeModel('gemini-pro') # Assigns which model is in use and names it model
-          #chat = model.start_chat(history=[])
-          #response = chat.send_message("You are a personal digital assistant, built into a pair of smart glasses. Your name is SPECTRUM. You are a little bit like JARVIS from Iron Man. You are kind and friendly. Please say hello in a kind, creative, and short way. Come up with something new every time. Do not say anything else.")
-
-          #document <= response.text
-        </script>
       </form>
     </div>
   </body>
