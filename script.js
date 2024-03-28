@@ -25,6 +25,10 @@ function validateForms() {
   var Q8 = document.forms["form2"]["Q8"].value;
   var Q9 = document.forms["form2"]["Q9"].value;
   var Q10 = document.forms["form2"]["Q10"].value;
+  const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+  const prompt = ("Take the following responses to questions and generate a list of possible NHD topics for them; To the question 'What is one person in history you find fascinating or inspiring?' they responded, '" + Q1 +"'. To the question, ");
+  const result = await model.generateContent(prompt);
+  alert(result.response.text());
 }
 
 //============== Next Form===============
@@ -53,6 +57,8 @@ function nextTwo() {
   increamentNumber();
   // update progress bar
   update();
+  validateForms()
+  
 }
 //=============== Back One==================
 function backTwo() {
@@ -106,9 +112,3 @@ const btnsEvents = () => {
   next2.addEventListener("click", nextTwo);
 };
 document.addEventListener("DOMContentLoaded", btnsEvents);
-const model = genAI.getGenerativeModel({ model: "gemini-pro" });
-
-const prompt = "Do these look store-bought or homemade?";
-
-const result = await model.generateContent(prompt);
-alert(result.response.text());
