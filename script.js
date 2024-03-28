@@ -110,5 +110,7 @@ const btnsEvents = () => {
   back1.addEventListener("click", backOne);
   //next 2
   next2.addEventListener("click", nextTwo);
+
+  back2.addEventListener("click", BackTwo);
 };
 document.addEventListener("DOMContentLoaded", btnsEvents);
