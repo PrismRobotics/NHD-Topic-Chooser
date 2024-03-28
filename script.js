@@ -106,3 +106,9 @@ const btnsEvents = () => {
   next2.addEventListener("click", nextTwo);
 };
 document.addEventListener("DOMContentLoaded", btnsEvents);
+const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+
+const prompt = "Do these look store-bought or homemade?";
+
+const result = await model.generateContent(prompt);
+console.log(result.response.text());
