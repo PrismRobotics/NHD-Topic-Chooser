@@ -111,4 +111,4 @@ const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 const prompt = "Do these look store-bought or homemade?";
 
 const result = await model.generateContent(prompt);
-console.log(result.response.text());
+alert(result.response.text());
